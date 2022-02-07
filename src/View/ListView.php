@@ -2,7 +2,7 @@
 
 namespace App\View;
 
-use App\Repository\AbstractCarRepository;
+use App\Repository\CarRepositoryInterface;
 
 /**
  * Class ListView
@@ -10,9 +10,9 @@ use App\Repository\AbstractCarRepository;
  */
 class ListView {
 
-    private AbstractCarRepository $carRepository;
+    private CarRepositoryInterface $carRepository;
 
-    public function __construct(AbstractCarRepository $carRepository) {
+    public function __construct(CarRepositoryInterface $carRepository) {
         $this->carRepository = $carRepository;
     }
 

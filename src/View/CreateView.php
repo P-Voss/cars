@@ -2,8 +2,6 @@
 
 namespace App\View;
 
-use App\Repository\AbstractCarRepository;
-
 /**
  * Class CreateView
  * @package App\View
